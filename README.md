@@ -1,5 +1,20 @@
 # ghostaction-history-sweeper
 
+
+## ⚡ GitHub Action
+
+Run it in CI — fails the build on findings at or above your threshold:
+
+```yaml
+- uses: actions/checkout@v4
+- uses: Iceman2050/ghostaction-history-sweeper@v1
+      with:
+        since: '2025-01-01' # optional: limit history scan
+        fail-on-findings: 'true' # default
+```
+
+Full input reference: [`action.yml`](./action.yml).
+
 **A defensive mirror of the attacker's own playbook.** In October 2026, the GhostAction campaign (~1,900 compromised GitHub accounts, 30,000+ repos) added **git-history secret scanning** to its payload: attackers diff every commit in your history, betting you never rotated secrets that were committed — even ones deleted later.
 
 This tool does exactly that scan, so you can find and rotate leaked secrets **before** an attacker does.
