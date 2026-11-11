@@ -1,3 +1,5 @@
+> **Archived — superseded by [ghostaction-guard-action](https://github.com/Iceman2050/ghostaction-guard-action).** This tool is no longer maintained. The maintained GitHub Action for sweeping workflow history now lives in the canonical repo linked above; use it instead.
+
 # ghostaction-history-sweeper
 
 
